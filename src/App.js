@@ -7,11 +7,12 @@ import InputBase from '@material-ui/core/InputBase';
 import Paper from '@material-ui/core/Paper';
 import { createStyles, fade, Theme, makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
+import { parse } from './jsonParser'
+import { CardContent, Card } from '@material-ui/core';
 
 document.body.style = 'background: rgb(245,245,245);';
 
-const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
+const useStyles = makeStyles(theme => ({
         root: {
             flexGrow: 1,
         },
@@ -82,6 +83,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 function App() {
     const classes = useStyles();
+    const boxPlot = parse();
     return (
         <div className={classes.root}>
             <AppBar position="static">
@@ -106,15 +108,8 @@ function App() {
             </AppBar>
             <div className={classes.body}>
                 <div className={classes.cards}>
-                    <Paper elevation={3} style={{ width: '300px', height: '400px' }} />
-                    <Paper elevation={3} style={{ width: '500px', height: '600px' }} />
-                    <Paper elevation={3} style={{ width: '300px', height: '400px' }} />
-                    <Paper elevation={3} style={{ width: '300px', height: '400px' }} />
-                    <Paper elevation={3} style={{ width: '500px', height: '600px' }} />
-                    <Paper elevation={3} style={{ width: '300px', height: '400px' }} />
-                    <Paper elevation={3} style={{ width: '300px', height: '400px' }} />
-                    <Paper elevation={3} style={{ width: '500px', height: '600px' }} />
-                    <Paper elevation={3} style={{ width: '300px', height: '400px' }} />
+                    
+                    {boxPlot}
                 </div>
             </div>
         </div>
