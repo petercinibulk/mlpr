@@ -1,27 +1,33 @@
 import React from 'react';
-import Plot from 'react-plotly.js';
-import { Paper } from '@material-ui/core';
+import LineChart from './components/lineChart';
+import BoxPlot from './components/boxPlot';
+import MetricTable from './components/table';
+import HeatMap from './components/heatMap';
 
-export const parse = () => {
-    var data = require('./data.json');
+export const parse = (data) => {
+    // var data = require(data.json);
 
-    console.log(data);
+    var components = [];
+    if (data != null) {
+        data['tables'].forEach((table) => {
+            components.push(<MetricTable tableData={table} />);
+        });
 
-    var plot_data = []
-    for (var i = 0; i < data['boxplot_data'][0].length; i++) {
-        plot_data.push({
-            y: data['boxplot_data'][1][i],
-            name: data['boxplot_data'][0][i],
-            type: 'box'
-        })
+        data['lineCharts'].forEach((lineChart) => {
+            components.push(<LineChart lineChartData={lineChart} />);
+        });
+
+        data['heatMaps'].forEach((heatMap) => {
+            components.push(<HeatMap heatMapData={heatMap} />);
+        });
+
+        data['boxPlots'].forEach((boxPlot) => {
+            components.push(<BoxPlot boxPlotData={boxPlot} />);
+        });
     }
 
-    return <Paper elevation={3} style={{width: 'auto', height: 'auto', padding: '16px',
-    margin: '16px'}}>
-        <Plot
-            data={plot_data}
-            layout={{ width: 600, title: 'A Fancy Plot' }} />
-    </Paper>
+    return components
+
 
 
 }
