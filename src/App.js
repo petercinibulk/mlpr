@@ -4,15 +4,13 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
+// import InputBase from '@material-ui/core/InputBase';
 import Paper from '@material-ui/core/Paper';
-import { fade, makeStyles } from '@material-ui/core/styles';
-import SearchIcon from '@material-ui/icons/Search';
+import { fade, } from '@material-ui/core/styles';
 import { parse } from './jsonParser'
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { blue, deepOrange } from '@material-ui/core/colors/';
-import { FilePicker } from 'react-file-picker'
 import { withStyles } from '@material-ui/core/styles';
 
 document.body.style = 'background: rgb(245,245,245);';
