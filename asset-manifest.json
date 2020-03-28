@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/petercinbulk.github.io/mlpr/static/css/main.d1b05096.chunk.css",
-    "main.js": "/petercinbulk.github.io/mlpr/static/js/main.41320b7f.chunk.js",
-    "main.js.map": "/petercinbulk.github.io/mlpr/static/js/main.41320b7f.chunk.js.map",
-    "runtime-main.js": "/petercinbulk.github.io/mlpr/static/js/runtime-main.bdda04a0.js",
-    "runtime-main.js.map": "/petercinbulk.github.io/mlpr/static/js/runtime-main.bdda04a0.js.map",
-    "static/js/2.4ee6dfcd.chunk.js": "/petercinbulk.github.io/mlpr/static/js/2.4ee6dfcd.chunk.js",
-    "static/js/2.4ee6dfcd.chunk.js.map": "/petercinbulk.github.io/mlpr/static/js/2.4ee6dfcd.chunk.js.map",
-    "index.html": "/petercinbulk.github.io/mlpr/index.html",
-    "precache-manifest.4525959572eefdc4d6cf1afd709dc6af.js": "/petercinbulk.github.io/mlpr/precache-manifest.4525959572eefdc4d6cf1afd709dc6af.js",
-    "service-worker.js": "/petercinbulk.github.io/mlpr/service-worker.js",
-    "static/css/main.d1b05096.chunk.css.map": "/petercinbulk.github.io/mlpr/static/css/main.d1b05096.chunk.css.map",
-    "static/js/2.4ee6dfcd.chunk.js.LICENSE.txt": "/petercinbulk.github.io/mlpr/static/js/2.4ee6dfcd.chunk.js.LICENSE.txt"
+    "main.css": "/mlpr/static/css/main.d1b05096.chunk.css",
+    "main.js": "/mlpr/static/js/main.c1d27406.chunk.js",
+    "main.js.map": "/mlpr/static/js/main.c1d27406.chunk.js.map",
+    "runtime-main.js": "/mlpr/static/js/runtime-main.c188ba56.js",
+    "runtime-main.js.map": "/mlpr/static/js/runtime-main.c188ba56.js.map",
+    "static/js/2.4ee6dfcd.chunk.js": "/mlpr/static/js/2.4ee6dfcd.chunk.js",
+    "static/js/2.4ee6dfcd.chunk.js.map": "/mlpr/static/js/2.4ee6dfcd.chunk.js.map",
+    "index.html": "/mlpr/index.html",
+    "precache-manifest.b28f2b8e006a3c627ade2a49cde583db.js": "/mlpr/precache-manifest.b28f2b8e006a3c627ade2a49cde583db.js",
+    "service-worker.js": "/mlpr/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/mlpr/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.4ee6dfcd.chunk.js.LICENSE.txt": "/mlpr/static/js/2.4ee6dfcd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bdda04a0.js",
+    "static/js/runtime-main.c188ba56.js",
     "static/js/2.4ee6dfcd.chunk.js",
     "static/css/main.d1b05096.chunk.css",
-    "static/js/main.41320b7f.chunk.js"
+    "static/js/main.c1d27406.chunk.js"
   ]
 }
